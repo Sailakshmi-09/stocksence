@@ -1,0 +1,292 @@
+.profile-page {
+  padding: 20px;
+  max-width: 800px;
+  margin: 0 auto;
+}
+.profile-container
+{
+  min-height: 80vh;
+  width: 100%;
+  margin-top: -10px;
+  background: linear-gradient(135deg, #4e54c8, #8f94fb);
+  color: white;
+  align-items: center;
+}
+body {
+  font-family: 'Arial', sans-serif;
+  background: linear-gradient(135deg, #4e54c8, #8f94fb);
+  margin: 0;
+  padding: 0;
+  min-height: 100vh;
+  color: #333;
+  /* overflow: hidden; */
+}
+/* Add this to your existing CSS */
+
+.transaction-type {
+  font-weight: bold;
+  text-transform: capitalize;
+}
+
+.transaction-type.deposit {
+  color: #2ecc71;
+}
+
+.transaction-type.withdrawal {
+  color: #e74c3c;
+}
+
+/* Adjust the existing styles for transaction items */
+.transaction-item {
+  background-color: #ffffff;
+  border-radius: 5px;
+  box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+  transition: transform 0.2s, box-shadow 0.2s;
+}
+
+.transaction-item:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+}
+
+.transaction-item.deposit {
+  border-left: 4px solid #2ecc71;
+}
+
+.transaction-item.withdrawal {
+  border-left: 4px solid #e74c3c;
+}
+
+header {
+  background: linear-gradient(to right, #6a5acd, #8a2be2);
+  color: white;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 1rem 2rem;
+  margin-top: 10px;
+  height: 10px;
+  /* padding-bottom: 10px; */
+}
+
+.navbar-brand {
+  font-size: 1.5rem;
+  font-weight: bold;
+}
+
+.account-summary {
+  background-color: #f8f9fa;
+  border-radius: 8px;
+  padding: 20px;
+  margin-bottom: 30px;
+}
+
+.username {
+  font-size: 18px;
+  color: #666;
+  margin-bottom: 10px;
+}
+
+.balance-info {
+  margin-bottom: 20px;
+}
+
+.balance-info span {
+  font-size: 14px;
+  color: #666;
+}
+
+.balance-info h2 {
+  font-size: 28px;
+  color: #333;
+  margin-top: 5px;
+}
+
+.action-buttons {
+  display: flex;
+  gap: 10px;
+}
+
+.action-buttons button {
+  padding: 10px 15px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  font-size: 14px;
+  display: flex;
+  align-items: center;
+}
+
+.action-buttons button i {
+  margin-right: 5px;
+}
+
+.add-funds, .withdraw {
+  background-color: #fff;
+  color: #007bff;
+  border: 1px solid #007bff;
+}
+
+.transaction-history {
+  margin-top: 2rem;
+  background-color: #f8f9fa;
+  border-radius: 8px;
+  padding: 1rem;
+  box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+}
+
+.transaction-table-container {
+  max-height: 400px;
+  overflow-y: auto;
+  border-radius: 8px;
+}
+
+.transaction-table {
+  width: 100%;
+  border-collapse: separate;
+  border-spacing: 0 10px;
+}
+
+.transaction-table th,
+.transaction-table td {
+  padding: 12px;
+  text-align: left;
+}
+
+.transaction-table th {
+  background-color: #f2f2f2;
+  font-weight: bold;
+  color: #333;
+  position: sticky;
+  top: 0;
+  z-index: 10;
+}
+
+.transaction-item {
+  background-color: #ffffff;
+  border-radius: 5px;
+  box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+  transition: transform 0.2s, box-shadow 0.2s;
+}
+
+.transaction-item:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+}
+
+.transaction-item.deposit {
+  border-left: 4px solid #2ecc71;
+}
+
+.transaction-item.withdrawal {
+  border-left: 4px solid #e74c3c;
+}
+
+.transaction-amount {
+  font-weight: bold;
+}
+
+.deposit .transaction-amount {
+  color: #2ecc71;
+}
+
+.withdrawal .transaction-amount {
+  color: #e74c3c;
+}
+
+.transaction-date {
+  color: #7f8c8d;
+  font-size: 14px;
+}
+
+.error-message {
+  color: #e74c3c;
+  background-color: #fadbd8;
+  padding: 10px;
+  border-radius: 4px;
+  margin-top: 10px;
+}
+
+.success-message {
+  color: #27ae60;
+  background-color: #d4efdf;
+  padding: 10px;
+  border-radius: 4px;
+  margin-top: 10px;
+}
+
+/* Scrollbar styling */
+.transaction-table-container::-webkit-scrollbar {
+  width: 8px;
+}
+
+.transaction-table-container::-webkit-scrollbar-track {
+  background: #f1f1f1;
+  border-radius: 4px;
+}
+
+.transaction-table-container::-webkit-scrollbar-thumb {
+  background: #888;
+  border-radius: 4px;
+}
+
+.transaction-table-container::-webkit-scrollbar-thumb:hover {
+  background: #555;
+}
+.fund-management {
+  display: flex;
+  gap: 10px;
+  margin: 20px 0;
+  align-items: center;
+}
+
+.fund-management input[type="number"] {
+  flex-grow: 1;
+  padding: 10px;
+  border: 1px solid #ddd;
+  border-radius: 5px;
+  font-size: 16px;
+  transition: border-color 0.3s ease;
+}
+
+.fund-management input[type="number"]:focus {
+  outline: none;
+  border-color: #8e44ad;
+  box-shadow: 0 0 0 2px rgba(142, 68, 173, 0.2);
+}
+
+.fund-management button {
+  padding: 10px 15px;
+  background-color: #8e44ad;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  font-size: 16px;
+  transition: background-color 0.3s ease, transform 0.1s ease;
+}
+
+.fund-management button:hover {
+  background-color: #9b59b6;
+}
+
+.fund-management button:active {
+  transform: scale(0.98);
+}
+
+.fund-management button:first-of-type {
+  background-color: #27ae60;
+}
+
+.fund-management button:first-of-type:hover {
+  background-color: #2ecc71;
+}
+
+.fund-management button:last-of-type {
+  background-color: #c0392b;
+}
+
+.fund-management button:last-of-type:hover {
+  background-color: #e74c3c;
+}
+/* Retain existing styles for other elements */

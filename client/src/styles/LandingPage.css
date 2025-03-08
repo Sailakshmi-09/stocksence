@@ -1,0 +1,176 @@
+
+body, html {
+  min-height: 100vh;
+  width: 100%;
+  background: linear-gradient(135deg, #c84e99, #93fb8f);
+}
+
+.landing-page {
+  min-height: 100vh;
+  width: 100%;
+  background: linear-gradient(135deg, #c84ead, #ac8ffb);
+}
+
+header {
+  background-color: #00ccbb;
+  color: white;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 1rem 2rem;
+  margin-top: 1px;
+  height: 10px;
+}
+.navbar-brand {
+  font-size: 2.0rem;
+  font-weight: bold;
+}
+
+h1 {
+  margin: 0;
+}
+
+nav a {
+  color: white;
+  text-decoration: none;
+  margin-left: 20px;
+}
+main {
+  display: flex;
+  padding: 20px;
+  gap: 20px;
+  background-color: #f0f0f0;
+  margin: 20px;
+  border-radius: 8px;
+}
+.trending-stocks, .watchlist {
+  background-color: rgb(255, 255, 255);
+  border-radius: 8px;
+  box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+  padding: 20px;
+  margin-top: 20px;
+}
+.trending-stocks {
+  flex: 1;
+}
+
+.watchlist {
+  flex: 2;
+}
+
+h2 {
+  color: #1e88e5;
+  margin-top: 0;
+}
+
+.stock-item, .watchlist-item {
+  border: 1px solid #e0e0e0;
+  border-radius: 4px;
+  padding: 10px;
+  margin-bottom: 10px;
+}
+.stock-name {
+  font-size: 14px;
+  color: #666;
+}
+
+.stock-details {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 5px;
+}
+
+.symbol {
+  font-weight: bold;
+}
+.price {
+  font-weight: bold;
+}
+
+.positive { color: green; }
+.negative { color: red; }
+
+.watchlist-item {
+  display: flex;
+  align-items: center;
+}
+
+.stock-exchange {
+  background-color: #e0e0e0;
+  padding: 5px 10px;
+  border-radius: 4px;
+  margin-right: 10px;
+}
+
+.stock-info {
+  flex-grow: 1;
+}
+.view-chart {
+  background-color: #1e88e5;
+  color: white;
+  border: none;
+  padding: 8px 15px;
+  border-radius: 4px;
+  cursor: pointer;
+}
+input[type="text"] {
+  flex-grow: 1;
+  padding: 8px;
+  border: 1px solid #e0e0e0;
+  border-radius: 4px 0 0 4px;
+}
+form button {
+  background-color: #1e88e5;
+  color: white;
+  border: none;
+  padding: 8px 15px;
+  border-radius: 0 4px 4px 0;
+  cursor: pointer;
+}
+
+.stock-chart {
+  background-color: white;
+  border-radius: 8px;
+  box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+  padding: 20px;
+  margin-top: 20px;
+}
+.stock-chart h2 {
+  margin-bottom: 15px;
+}
+
+.stock-chart button {
+  margin-top: 15px;
+  padding: 5px 10px;
+  background-color: #6a5acd;
+  color: white;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+.stock-chart button:hover {
+  background-color: #5a4db1;
+} 
+/* 
+
+
+
+
+
+
+
+
+
+
+
+form {
+  display: flex;
+  margin-bottom: 20px;
+}
+
+
+
+
+
+*/

@@ -1,0 +1,21 @@
+.navbar {
+  background-color: #3224f3;
+  color: white;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 1rem 2rem;
+  margin-top: 10px;
+}
+
+.navbar-brand {
+  background-color: #04eb18;
+  font-size: 1.5rem;
+  font-weight: bold;
+}
+
+.navbar-links a {
+  color: white;
+  text-decoration: none;
+  margin-left: 1rem;
+}

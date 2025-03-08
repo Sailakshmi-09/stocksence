@@ -1,0 +1,124 @@
+/* client/src/styles/Register.css */
+body {
+    margin: 0;
+    padding: 0;
+    font-family: 'Arial', sans-serif;
+    background: linear-gradient(to right, #007bff, #6a5acd); /* Gradient background */
+    display: flex;
+    justify-content: center; /* Center the container horizontally */
+    align-items: center; /* Center the container vertically */
+    height: 100vh; /* Full viewport height */
+  }
+  
+  .register-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 100vh; /* Half of the viewport height */
+  }
+  
+  .register-card {
+    background: white; /* White background for the card */
+    border-radius: 15px;
+    box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+    padding: 30px;
+    width: 400px; /* Fixed width for the card */
+    text-align: center;
+  }
+  
+  .register-card h2 {
+    margin-bottom: 20px;
+    color: #333; /* Dark text color */
+  }
+  
+  .form-group {
+    margin-bottom: 15px;
+    text-align: left; /* Align labels to the left */
+  }
+  
+  .form-group label {
+    display: block;
+    margin-bottom: 5px;
+    color: #555; /* Label color */
+  }
+  
+  .form-group input {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    transition: border-color 0.3s;
+  }
+  
+  .form-group input:focus {
+    border-color: #007bff; /* Change border color on focus */
+  }
+  
+  .register-btn {
+    width: 100%;
+    padding: 10px;
+    background-color: #007bff; /* Button color */
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+  }
+  
+  .register-btn:hover {
+    background-color: #0056b3; /* Darker shade on hover */
+  }
+  
+  .login-link {
+    margin-top: 10px;
+  }
+  
+  .register-link {
+    color: #007bff; /* Link color */
+    cursor: pointer;
+    text-decoration: underline;
+  }
+  
+  .social-buttons {
+    margin-top: 20px;
+  }
+  
+  .social-btn {
+    width: 100%;
+    padding: 10px;
+    border: none;
+    border-radius: 5px;
+    color: white;
+    cursor: pointer;
+    font-weight: bold;
+  }
+  
+  .facebook {
+    background-color: #3b5998; /* Facebook color */
+  }
+  
+  .google {
+    background-color: #db4437; /* Google color */
+  }
+  .navbar {
+    position: fixed; /* Fixes the navbar at the top */
+    top: 0; /* Aligns it to the top */
+    left: 0; /* Aligns it to the left */
+    width: 100%; /* Full width */
+    z-index: 1000; /* Ensures it stays above other content */
+    background: linear-gradient(to right, #6a5acd, #8a2be2); /* Gradient background */
+    color: white; /* Text color for navbar elements */
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1); /* Optional shadow for depth */
+    padding: 10px; /* Add some padding for better spacing */
+  }
+  
+  .navbar a {
+    color: white; /* Ensure links are white */
+    text-decoration: none; /* Remove underline from links */
+    margin: 0 15px; /* Add some margin between links */
+  }
+  
+  .navbar a:hover {
+    text-decoration: underline; /* Underline on hover for better visibility */
+  }
